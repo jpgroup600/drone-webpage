@@ -1,11 +1,11 @@
 .nav_logo-img {
 
-    width:100% !important;
+    width: 100% !important;
 }
 
 .main-video-container {
     border-radius: 20px;
-    height:70vh;
+    height: 70vh;
 }
 
 .section_hp-hero {
@@ -14,9 +14,22 @@
 }
 
 .members-container {
-    margin:0 auto
+    margin: 0 auto
 }
 
 .members-container .t-label-1-rg {
     text-align: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .nav_wrapper {
+        width: 90vw !important;
+    }
+
+    body * {
+        overflow-x: hidden !important;
+    }
 }
