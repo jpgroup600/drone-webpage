@@ -22,14 +22,39 @@
 }
 
 
+.section_hiw, .section_hp-problem, .section_hp-about, .section_single-news-rest, .footer {
+    z-index: -1 !important;
+}
+
+.padding-global-diff {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+
 
 @media screen and (max-width: 768px) {
 
     .nav_wrapper {
         width: 90vw !important;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
     }
 
-    body * {
+    .btn-menu_component{
+        position: relative;
+        top: 0rem;
+    }
+
+    .padding-global {
         overflow-x: hidden !important;
     }
+
+    .padding-global-diff {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
 }
