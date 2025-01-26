@@ -135,6 +135,8 @@
         rel="apple-touch-icon" />
     <link href="https://www.ceciliaenergy.com/" rel="canonical" />
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZVL7G61NE1"></script>
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
 
@@ -937,35 +939,35 @@
                 <div class="navbar_links-wrapper">
                     <div class="navbar_links-box">
                         <div class="navbar_link-el-mask">
-                            <a preloader-start="true" href="technology.html" class="navbar_link-el w-inline-block">
+                            <a preloader-start="true" href="/" class="navbar_link-el w-inline-block">
                                 <div class="navbar_link-el-dot"></div>
                                 <div class="t-navi-link-1-rg">Technology</div>
                                 <div class="navbar_link-el-dot"></div>
                             </a>
                         </div>
                         <div class="navbar_link-el-mask">
-                            <a preloader-start="true" href="product.html" class="navbar_link-el w-inline-block">
+                            <a preloader-start="true" href="/" class="navbar_link-el w-inline-block">
                                 <div class="navbar_link-el-dot"></div>
                                 <div class="t-navi-link-1-rg">Product</div>
                                 <div class="navbar_link-el-dot"></div>
                             </a>
                         </div>
                         <div class="navbar_link-el-mask">
-                            <a preloader-start="true" href="company.html" class="navbar_link-el w-inline-block">
+                            <a preloader-start="true" href="/" class="navbar_link-el w-inline-block">
                                 <div class="navbar_link-el-dot"></div>
                                 <div class="t-navi-link-1-rg">Company</div>
                                 <div class="navbar_link-el-dot"></div>
                             </a>
                         </div>
                         <div class="navbar_link-el-mask">
-                            <a preloader-start="true" href="news.html" class="navbar_link-el w-inline-block">
+                            <a preloader-start="true" href="/" class="navbar_link-el w-inline-block">
                                 <div class="navbar_link-el-dot"></div>
                                 <div class="t-navi-link-1-rg">News</div>
                                 <div class="navbar_link-el-dot"></div>
                             </a>
                         </div>
                         <div class="navbar_link-el-mask">
-                            <a preloader-start="true" href="contact.html" class="navbar_link-el w-inline-block">
+                            <a preloader-start="true" href="/" class="navbar_link-el w-inline-block">
                                 <div class="navbar_link-el-dot"></div>
                                 <div class="t-navi-link-1-rg">Contact</div>
                                 <div class="navbar_link-el-dot"></div>
@@ -1383,7 +1385,7 @@
                                 },
                             });
                             //splide.mount(window.splide.Extensions);
-                            splide.mount();
+                            splide.mount(window.splide.Extensions);
                         });
                     </script>
                 </div>
@@ -1505,39 +1507,35 @@
             </div>
         </div>
         <div class="hide w-embed w-script">
+            
             <script>
 
-                document.addEventListener("DOMContentLoaded", function () {
-                    var isSwperInit = false; //variable to check is swiper already initialized
-                    var swiperExample;
-
-                    function swiperInit() {
-                        if (window.innerWidth <= 767) { //add your breakpoint here
-                            if (!isSwperInit) {
-                                isSwperInit = true;
-
-                                //code of your swiper
-                                swiperExample = new Swiper(".swiper.hiw-slider", {
-                                    direction: "horizontal",
-                                    slidesPerView: 1.5,
-                                    speed: 500,
-                                    spaceBetween: 16
-                                });
-
-                            }
-                        } else if (isSwperInit) { //if(innerWidth > 767 & swiperEnabled) than destroy swiper 
-                            swiperExample.destroy();
-                            isSwperInit = false;
-                        }
-                    }
-                    swiperInit();
-
-                    //run code each time whe window resize
-                    window.addEventListener("resize", function () {
-                        swiperInit();
-                    });
-
-                });
+// document.addEventListener("DOMContentLoaded", function () {
+//     var swiper = new Swiper(".swiper.hiw-slider", {
+//         direction: "horizontal",
+//         loop: true,
+        
+//         // Smooth auto-scroll settings
+//         autoplay: {
+//             delay: 0, // No delay for continuous movement
+//             disableOnInteraction: false,
+//             pauseOnMouseEnter: false,
+//         },
+//         speed: 3000, // Higher number = slower/smoother scroll
+        
+//         // Optional: make it draggable and smooth
+//         grabCursor: true,
+//         freeMode: {
+//             enabled: true,
+//             momentum: true,
+//             momentumRatio: 0.8,
+//         },
+        
+//         // Ensure smooth looping
+//         slidesPerView: 1,
+//         loopAdditionalSlides: 1,
+//     });
+// });
 
             </script>
         </div>
