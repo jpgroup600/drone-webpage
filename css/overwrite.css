@@ -22,7 +22,11 @@
 }
 
 
-.section_hiw, .section_hp-problem, .section_hp-about, .section_single-news-rest, .footer {
+.section_hiw,
+.section_hp-problem,
+.section_hp-about,
+.section_single-news-rest,
+.footer {
     z-index: -1 !important;
 }
 
@@ -43,7 +47,7 @@
         align-items: center;
     }
 
-    .btn-menu_component{
+    .btn-menu_component {
         position: relative;
         top: 0rem;
     }
@@ -55,6 +59,11 @@
     .padding-global-diff {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .hiw_cards-grid {
+        display: flex;
+        flex-direction: column;
     }
 
 }
