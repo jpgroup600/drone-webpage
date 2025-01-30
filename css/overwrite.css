@@ -56,19 +56,22 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    border: 1px solid white;
   }
 
   .team-wrapper {
-    border: 1px solid red;
     height: 40vh;
-    background: url(/assets/pictures/member1.png);
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    box-shadow: 2px 2px 9px 0px rgb(255 0 0 / 50%);
   }
+
+  .team-wrapper:nth-child(1){background: url(/assets/pictures/ceo.png);background-size: cover;background-position: center;}
+  .team-wrapper:nth-child(2){background: url(/assets/pictures/cto.png);background-size: cover;background-position: center;}
+  .team-wrapper:nth-child(3){background: url(/assets/pictures/cmo.png);background-size: cover;background-position: center;}
+  .team-wrapper:nth-child(4){background: url(/assets/pictures/chro.png);background-size: cover;background-position: center;}
 
   .label-top {
     text-align: center;
@@ -94,6 +97,28 @@
 
   /* team mebmer */
 
+  .our-mision_icon.w-embed {
+    width: 40px;
+}
+
+.overlay-img-cont{
+    position: absolute;
+    top: 18px;
+    left:0%;
+    width: 100%;
+    height: 30vh;
+    background: black;
+}
+
+.overlay-img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 
@@ -134,6 +159,10 @@
 
     .team-container-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overlay-img-cont{
+        height: 95px;
     }
 
 
