@@ -40,6 +40,8 @@ $(document).ready(() => {
             window.open('whitepaper.pdf', '_blank');
         }
     });
+
+    
 });
 
 

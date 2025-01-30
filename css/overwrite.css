@@ -3,6 +3,10 @@
     width: 100% !important;
 }
 
+.page-wrapper.is-hp {
+    z-index: unset !important;
+}
+
 .main-video-container {
     border-radius: 20px;
     height: 70vh;
@@ -22,13 +26,12 @@
 }
 
 
-.section_hiw,
+/* .section_hiw,
 .section_hp-problem,
 .section_hp-about,
-.section_single-news-rest,
-.footer {
+.section_single-news-rest {
     z-index: -1 !important;
-}
+} */
 
 .padding-global-diff {
     padding-left: 2.5rem;
@@ -135,6 +138,11 @@
    .footer_grid-col {
     height:40vh;
    }
+
+   .timeline-text {
+    font-size: 1rem;
+   }
+
  }
 
 
