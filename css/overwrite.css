@@ -83,7 +83,6 @@
     opacity: 0.9;
     height: 100%;
     position: absolute;
-    bottom: -90%;
     left: 0;
     right: 0;
     transition: bottom 0.3s ease;
@@ -119,6 +118,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* is pc */
+ @media screen and (min-width: 768px) {
+   .team-label-container {
+    bottom: -90%;
+   }
+ }
 
 
 
@@ -167,6 +173,10 @@
 
     .team-wrapper {
         height: 25vh;
+    }
+
+    .team-label-container {
+        bottom: -85%;
     }
 
 

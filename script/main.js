@@ -50,16 +50,25 @@ const swiper = new Swiper('.swiper2', {
 
 document.addEventListener('DOMContentLoaded', () => {
     const teamWrappers = document.querySelectorAll('.team-wrapper');
-    
+    let isMobile = false;
+    let styleChange = '-90%'
+
+    if (window.innerWidth < 768) {
+        isMobile = true;
+        styleChange = '-85%'
+    }
+
+
     teamWrappers.forEach(wrapper => {
         const labelContainer = wrapper.querySelector('.team-label-container');
         
-        wrapper.addEventListener('mouseenter', () => {
-            labelContainer.style.bottom = '0';
-        });
-        
-        wrapper.addEventListener('mouseleave', () => {
-            labelContainer.style.bottom = '-90%';
-        });
+            wrapper.addEventListener('mouseenter', () => {
+                labelContainer.style.bottom = '0';
+            });
+
+            wrapper.addEventListener('mouseleave', () => {
+                labelContainer.style.bottom = styleChange;
+            });
     });
+
 });
