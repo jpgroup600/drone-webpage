@@ -35,6 +35,68 @@
     padding-right: 2.5rem;
 }
 
+.hero-hp-title {
+    font-weight: 900;
+}
+
+.team-container {
+    border: 1px solid white;
+    height:80vh;
+    width: 100%;
+}
+
+.swiper2 {
+    width: 600px;
+    height: 300px;
+  }
+
+  /* team mebmer */
+
+  .team-container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border: 1px solid white;
+  }
+
+  .team-wrapper {
+    border: 1px solid red;
+    height: 40vh;
+    background: url(/assets/pictures/member1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .label-top {
+    text-align: center;
+    padding-top: 3px;
+  }
+
+  .team-label-container {
+    background: #000;
+    opacity: 0.9;
+    height: 100%;
+    position: absolute;
+    bottom: -90%;
+    left: 0;
+    right: 0;
+    transition: bottom 0.3s ease;
+    z-index: 2;
+  }
+
+  /* Add hover effect */
+  .team-wrapper:hover .team-label-container {
+    bottom: 0;
+  }
+
+  /* team mebmer */
+
+
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -65,5 +127,15 @@
         display: flex;
         flex-direction: column;
     }
+
+    .hero-small-text {
+        font-size:23px;
+    }
+
+    .team-container-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
 
 }
