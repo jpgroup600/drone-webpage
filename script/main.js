@@ -1,17 +1,38 @@
-// function scrollToSection(sectionId) {
-//     const section = document.getElementById(sectionId);
-//     section.scrollIntoView({ behavior: 'smooth' });
-// }
+document.addEventListener('DOMContentLoaded', () => {
+    // Get all navigation links (excluding the whitepaper link)
+    const navLinks = document.querySelectorAll('.navbar_link-el[data-href^="#"]');
+    
+    const scrollToSection = (sectionId) => {
+        const section = document.querySelector(sectionId);
+        if (section) {
+            const headerOffset = 100; // Adjust this value based on your header height
+            const elementPosition = section.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     const links = document.querySelectorAll('a[href^="#"]');
-//     links.forEach(link => {
-//         link.addEventListener('click', (event) => {
-//             event.preventDefault();
-//             scrollToSection(link.getAttribute('href').slice(1));
-//         });
-//     });
-// });
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+
+            const menuBtn = document.querySelector('#menu-btn');
+            menuBtn.click();
+
+
+        }
+    };
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const sectionId = link.getAttribute('data-href');
+            scrollToSection(sectionId);
+            
+            // Optional: Update active state
+            navLinks.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+        });
+
+    });
+});
 
 $(document).ready(() => {
     $('.download-whitepaper').click(() => {
@@ -49,26 +70,26 @@ const swiper = new Swiper('.swiper2', {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const teamWrappers = document.querySelectorAll('.team-wrapper');
-    let isMobile = false;
-    let styleChange = '-90%'
+    // const teamWrappers = document.querySelectorAll('.team-wrapper');
+    // let isMobile = false;
+    // let styleChange = '-90%'
 
-    if (window.innerWidth < 768) {
-        isMobile = true;
-        styleChange = '-85%'
-    }
+    // if (window.innerWidth < 768) {
+    //     isMobile = true;
+    //     styleChange = '-85%'
+    // }
 
 
-    teamWrappers.forEach(wrapper => {
-        const labelContainer = wrapper.querySelector('.team-label-container');
+    // teamWrappers.forEach(wrapper => {
+    //     const labelContainer = wrapper.querySelector('.team-label-container');
         
-            wrapper.addEventListener('mouseenter', () => {
-                labelContainer.style.bottom = '0';
-            });
+    //         wrapper.addEventListener('mouseenter', () => {
+    //             labelContainer.style.bottom = '0';
+    //         });
 
-            wrapper.addEventListener('mouseleave', () => {
-                labelContainer.style.bottom = styleChange;
-            });
-    });
+    //         wrapper.addEventListener('mouseleave', () => {
+    //             labelContainer.style.bottom = styleChange;
+    //         });
+    // });
 
 });

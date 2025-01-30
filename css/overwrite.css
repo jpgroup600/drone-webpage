@@ -119,10 +119,21 @@
     transform: translate(-50%, -50%);
 }
 
+.footer-logo {
+    filter: invert(0);
+    width: 40px;
+    height: 40px;
+}
+
+
 /* is pc */
  @media screen and (min-width: 768px) {
    .team-label-container {
     bottom: -90%;
+   }
+
+   .footer_grid-col {
+    height:40vh;
    }
  }
 
