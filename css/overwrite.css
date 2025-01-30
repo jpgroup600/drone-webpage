@@ -65,7 +65,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    box-shadow: 2px 2px 9px 0px rgb(255 0 0 / 50%);
+    box-shadow: 2px 2px 9px 0px #ea992950;
   }
 
   .team-wrapper:nth-child(1){background: url(/assets/pictures/ceo.png);background-size: cover;background-position: center;}
