@@ -71,25 +71,25 @@
     box-shadow: 2px 2px 9px 0px #ea992950;
 }
 
-.team-wrapper:nth-child(1) {
+.grid-wrapper:nth-child(1) .team-wrapper {
     background: url(/assets/pictures/ceo.png);
     background-size: cover;
     background-position: center;
 }
 
-.team-wrapper:nth-child(2) {
+.grid-wrapper:nth-child(2) .team-wrapper {
     background: url(/assets/pictures/cto.png);
     background-size: cover;
     background-position: center;
 }
 
-.team-wrapper:nth-child(3) {
+.grid-wrapper:nth-child(3) .team-wrapper {
     background: url(/assets/pictures/cmo.png);
     background-size: cover;
     background-position: center;
 }
 
-.team-wrapper:nth-child(4) {
+.grid-wrapper:nth-child(4) .team-wrapper {
     background: url(/assets/pictures/chro.png);
     background-size: cover;
     background-position: center;
@@ -97,7 +97,9 @@
 
 .label-top {
     text-align: center;
-    padding-top: 3px;
+    padding-top: 3%;
+    font-weight: 900;
+    letter-spacing: 0.6rem;
 }
 
 .team-label-container {
@@ -204,6 +206,7 @@
 .advisor-name {
     font-weight: 900;
     font-size: 24px;
+    text-align: center;
 }
 
 .advisor-title {
@@ -213,6 +216,13 @@
 
 .advisor-text-container {
     text-align: center;
+}
+
+.board-name {
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+    margin-top:10px;
 }
 
 
