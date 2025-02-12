@@ -95,9 +95,7 @@ Curator, National Aviation Museum`,
 
 `ESG Consultant <br>
 Drone Safety Manager <br>
-AIRON CMO <br>
-HEARIM CEO <br>
-AIRLABS CSO`,
+AIRON CMO <br>`,
 
 "",
 
