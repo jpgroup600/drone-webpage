@@ -220,7 +220,7 @@
 
 .board-name {
     font-weight: 900;
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
     margin-top:10px;
 }
@@ -256,14 +256,14 @@
 
     .advisor-name {
         font-weight: 900;
-        font-size: 36px;
+        font-size: 20px;
     }
 
 }
 
 
 
-
+/* mobile */
 
 @media screen and (max-width: 768px) {
 
@@ -331,6 +331,14 @@
     .company-text2 {
         font-size: 1.5rem;
         line-height: 30px;
+    }
+
+    .label-top {
+        font-size: 13px;
+    }
+
+    .advisor-name {
+        font-size: 20px;
     }
 
 
