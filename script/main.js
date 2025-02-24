@@ -86,18 +86,31 @@ document.addEventListener('DOMContentLoaded', () => {
     teamWrappers.forEach((wrapper, index) => {
     
     const content = [
-        `Air Force Academy graduate <br>
-F-15K IWSO, Fighter Weapons Instructor Course <br>
-Commercial Pilot, CE-525 Type Rating <br>
-Curator, National Aviation Museum`,
+        `• Air Force Academy graduate <br>
+• F-15K IWSO, Fighter Weapons Instructor Course <br>
+• Commercial Pilot, CE-525 Type Rating <br>
+• Curator, National Aviation Museum`,
 
-"",
+`• Ph.D. & M.S. in Computer Engineering, Stanford University <br>
+• CEO, SD Plex Co., Ltd. <br>
+• Former Director, AI & IoT Technology, Nongshim NSTech <br>
+• Research Engineer, Sun Microsystems & Intel <br>
+• Industry Advisory Committee Member, Government 3.0 Cloud Division<br>`,
 
-`ESG Consultant <br>
-Drone Safety Manager <br>
-AIRON CMO <br>`,
+`• ESG Consultant <br>
+• Drone Safety Manager <br>
+• AIRON CMO <br>`,
 
-"",
+`• Ph.D. & M.S. in Fine Arts, Ewha Womans University <br>
+• TESOL Certification, Seattle University <br>
+• Interpreter for Donald Trump, SBS Documentary Culture Map for Changing Asia <br>
+• Samsung Gallery Music Hall <br>
+• Curator at Seonjae Art Center, Fashion Show Model at the Louvre <br>
+• Writer for TOP CLASS and Chosun Ilbo <br>
+• Animal Rescue Advocate <br>
+• CTREE Project Creator, Honorary Chair of Elite Orchestra<br>`,
+
+
 
 
     ]
