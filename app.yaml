@@ -1,0 +1,17 @@
+runtime: python39
+
+handlers:
+# 1) Map the root URL (/) to index.html
+- url: /
+  static_files: index.html
+  upload: index.html
+
+# 2) Serve any static file with known extensions
+- url: /(.*\.(html|css|js|png|jpg|gif|pdf))
+  static_files: \1
+  upload: .*\.(html|css|js|png|jpg|gif|pdf)
+
+# 3) Serve clean URLs (e.g. /company -> company.html)
+- url: /(.*)
+  static_files: \1.html
+  upload: .*
