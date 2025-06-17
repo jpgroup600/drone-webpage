@@ -1,17 +1,18 @@
 runtime: python39
 
 handlers:
-# 1) Map the root URL (/) to index.html
+# 1) Serve the root URL
 - url: /
   static_files: index.html
   upload: index.html
 
-# 2) Serve any static file with known extensions
-- url: /(.*\.(html|css|js|png|jpg|gif|pdf))
+# 2) Serve static assets including video
+- url: /(.*\.(html|css|js|png|jpg|gif|pdf|mp4))$
   static_files: \1
-  upload: .*\.(html|css|js|png|jpg|gif|pdf)
+  upload: .*\.(html|css|js|png|jpg|gif|pdf|mp4)
+  mime_type: video/mp4
 
-# 3) Serve clean URLs (e.g. /company -> company.html)
+# 3) Enable clean URLs (e.g., /company → company.html)
 - url: /(.*)
   static_files: \1.html
   upload: .*
