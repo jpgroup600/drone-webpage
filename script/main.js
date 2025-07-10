@@ -86,10 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
     teamWrappers.forEach((wrapper, index) => {
     
     const content = [
-        `• Air Force Academy graduate <br>
-• F-15K IWSO, Fighter Weapons Instructor Course <br>
-• Commercial Pilot, CE-525 Type Rating <br>
-• Curator, National Aviation Museum`,
+        `• Big-Data Analytics Visionary <br>
+• Former Director of AI·IoT·Big-Data Strategy <br>
+• Research Engineer, High-Performance Analytics <br>
+• Industry Advisory Committee Member`,
 
 `• Ph.D. & M.S. in Computer Engineering, Stanford University <br>
 • CEO, SD Plex Co., Ltd. <br>
