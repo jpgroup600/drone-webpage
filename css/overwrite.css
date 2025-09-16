@@ -72,7 +72,7 @@
 }
 
 .grid-wrapper:nth-child(1) .team-wrapper {
-    background: url(/assets/pictures/ceo.png);
+    background: url(/assets/pictures/cmo.png);
     background-size: cover;
     background-position: center;
 }
@@ -84,7 +84,8 @@
 }
 
 .grid-wrapper:nth-child(3) .team-wrapper {
-    background: url(/assets/pictures/cmo.png);
+    /* background: url(/assets/pictures/cmo.png); */
+    background: url(/assets/pictures/ceo.png);
     background-size: cover;
     background-position: center;
 }

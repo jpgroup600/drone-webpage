@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `• Big-Data Analytics Visionary <br>
 • Former Director of AI·IoT·Big-Data Strategy <br>
 • Research Engineer, High-Performance Analytics <br>
-• Industry Advisory Committee Member`,
+• Industry Advisory Committee Member<br>`,
 
 `• Ph.D. & M.S. in Computer Engineering, Stanford University <br>
 • CEO, SD Plex Co., Ltd. <br>
@@ -97,9 +97,10 @@ document.addEventListener('DOMContentLoaded', () => {
 • Research Engineer, Sun Microsystems & Intel <br>
 • Industry Advisory Committee Member, Government 3.0 Cloud Division<br>`,
 
-`• ESG Consultant <br>
-• Drone Safety Manager <br>
-• AIRON CMO <br>`,
+`• Air Force Academy graduate <br>
+• F-15K IWSO, Fighter Weapons Instructor Course <br>
+• Commercial Pilot, CE-525 Type Rating <br>
+• Curator, National Aviation Museum<br>`,
 
 `• Ph.D. & M.S. in Fine Arts, Ewha Womans University <br>
 • TESOL Certification, Seattle University <br>
