@@ -1,15 +1,23 @@
-# Use lightweight nginx image
-FROM nginx:alpine
+# Use Node.js official image
+FROM node:18-alpine
 
-# Remove default Nginx static site (optional but clean)
-RUN rm -rf /usr/share/nginx/html/*
+# Set working directory
+WORKDIR /app
 
-# Copy all your static files into the nginx html folder
-# If your HTML etc is in a subfolder like 'public', adjust the path.
-COPY . /usr/share/nginx/html
+# Copy package files
+COPY package*.json ./
 
-# Expose port 80 so CapRover can map it
-EXPOSE 80
+# Install dependencies
+RUN npm install --only=production
 
-# Healthcheck so CapRover knows the container is healthy
-HEALTHCHECK CMD wget -qO- http://127.0.0.1:80/ || exit 1
+# Copy all application files
+COPY . .
+
+# Expose port 3000 (matching the port in index.js)
+EXPOSE 3000
+
+# Healthcheck to ensure the container is healthy
+HEALTHCHECK CMD wget -qO- http://127.0.0.1:3000/ || exit 1
+
+# Start the application
+CMD ["node", "index.js"]
