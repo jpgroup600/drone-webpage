@@ -1,27 +1,14 @@
 {
   "name": "drone-webpage",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/jpgroup600/drone-webpage#readme",
-  "bugs": {
-    "url": "https://github.com/jpgroup600/drone-webpage/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jpgroup600/drone-webpage.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
-  },
-  "dependencies": {
-    "express": "^5.1.0"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "devDependencies": {
-    "nodemon": "^3.1.11"
+    "vite": "^7.2.4"
   }
 }
