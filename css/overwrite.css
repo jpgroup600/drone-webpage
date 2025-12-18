@@ -1,7 +1,9 @@
 .nav_logo-img {
 
     width: 100% !important;
+    height: 4rem !important;
 }
+
 
 .page-wrapper.is-hp {
     z-index: unset !important;
@@ -380,6 +382,12 @@
 
     .advisor-name {
         font-size: 20px;
+    }
+
+    .nav_logo-img {
+
+        width: 100% !important;
+        height: 3rem !important;
     }
 
 
